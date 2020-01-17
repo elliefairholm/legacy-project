@@ -1,0 +1,62 @@
+#roadmap-form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: 3px solid #F07B7B;
+  box-shadow: -2px 4px 5px rgba(0, 0, 0, .2);
+  height: 350px;
+  width: 350px;
+  font-size: 25px;
+  color: #201E45;
+  text-decoration: none;
+}
+
+#roadmap-form input {
+  width: 50%;
+  height: 10%;
+  outline: none;
+  font-size: 15px;
+  padding: 5px;
+  border-bottom: 1px solid #201E45;
+}
+
+#roadmap-form select {
+  width: 50%;
+  height: 10%;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 15px;
+}
+
+#roadmap-form button {
+  text-decoration: none;
+  margin-top: 5px;
+  width: 50%;
+  height: 10%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  outline: none;
+}
+
+#roadmap-form button:active {
+  border-bottom: none;
+}
+
+#roadmap-form button:hover {
+  color: #F07B7B;
+}
+
+select {
+  background-color: transparent;
+}
+
+option {
+  text-align: center;
+}

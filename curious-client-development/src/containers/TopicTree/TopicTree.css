@@ -1,0 +1,79 @@
+.copy-container {
+  height: 40px;
+  background-color: #404267;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .25), 0px -20px 30px rgba(0, 0, 0, .35) inset;
+}
+
+.copy-container:hover {
+  cursor: pointer;
+  background-color: #4e507a;
+}
+
+.copy-btn {
+  width: 100%;
+  color: #FFF;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-btn:hover {
+  cursor: pointer;
+}
+
+.copy-label {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.copy-roadmap {
+  font-size: 24px;
+}
+
+.copy-roadmap:hover, .add-row-btn:hover {
+  cursor: pointer;
+}
+
+.add-row-btn svg {
+  color: #404267;
+  font-size: 24px;
+}
+
+.add-row-btn {
+  margin-left: 7px;
+}
+
+.add-row-label {
+  display: none;
+  width: 112px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.add-row-btn:hover+.add-row-label {
+  display: block;
+  position: absolute;
+  bottom: -25px;
+}
+
+.add-row-container {
+  width: 20%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 16px;
+  position: relative;
+}
+
+.preview-pos {
+  max-width: 70%;
+  min-width: 70%;
+}

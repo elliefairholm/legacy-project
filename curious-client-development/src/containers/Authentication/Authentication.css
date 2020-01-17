@@ -1,0 +1,109 @@
+.authentication-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./../../assets/background-auth.jpg');
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+.form-wrapper {
+  position: absolute;
+  width: 400px;
+  background-color: rgba(228, 228, 239, 0.575);
+  border-left: 1px solid #E4E4EF;
+  border-right: 1px solid #E4E4EF;
+  border-bottom: 1px solid #E4E4EF;
+  border-radius: 10px;
+  box-shadow: -2px 4px 5px rgba(0, 0, 0, .2);
+}
+
+.form-wrapper button {
+  cursor: pointer;
+}
+
+.form-header {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-header>button {
+  height: 56px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Comfortaa';
+}
+
+.form-header>button:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.form-header>button:not(:first-of-type) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form-header>button>p {
+  display: inline-block;
+}
+
+.form-header>button.selected {
+  background-color: #E4E4EF;
+  box-shadow: 0px -20px 50px rgba(0, 0, 0, .25) inset;
+  color: #FFF;
+}
+
+.form-header>button:not(.selected) {
+  background-color: #FFF;
+}
+
+form input:hover {
+  outline: 2px solid #7177e7;
+}
+
+#auth-heading {
+  font-size: 30px;
+  padding-bottom: 20px;
+  align-self: flex-start;
+  padding-left: 120px;
+}
+
+#auth-heading h2 {
+  padding-top: 16px;
+  padding-left: 8px;
+  font-size: 20px;
+}
+
+#auth-heading span {
+  color: #F07B7B;
+}
+
+.login-selector {
+  height: 64px;
+  background-color: #FFF;
+}
+
+@media screen and (max-width: 1500px) {
+  .form-wrapper {
+    display: block;
+    margin: 0 auto;
+  }
+  #auth-heading {
+    font-size: 30px;
+    padding-bottom: 20px;
+    align-self: flex-start;
+    padding-left: 160px;
+    top: 110px;
+    position: absolute;
+  }
+}

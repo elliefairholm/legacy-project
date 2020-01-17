@@ -1,0 +1,86 @@
+.topic-details-card {
+  border-left: 2px solid #E4E4EF;
+  border-bottom: 2px solid #E4E4EF;
+  display: inline-flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.block {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-block-wrapper, .description-block-wrapper, .resources-block-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.block h4 {
+  padding-bottom: 8px;
+  width: 40%;
+  font-weight: 700;
+}
+
+.block textarea {
+  height: 4vh;
+  overflow-y: scroll;
+  overflow: hidden;
+  border: 1px solid #4042616c;
+  border-radius: 3px;
+  padding: 12px;
+}
+
+.resources-block-wrapper.block textarea {
+  border: none;
+  border-radius: 0
+}
+
+.block textarea:nth-of-type(3) {
+  border-radius: none;
+}
+
+.save-container {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  bottom: 6%;
+  border: 1px solid #201E45;
+  transition: border-color .35s, border-radius .35s;
+}
+
+.save-container:hover {
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.save-container>button {
+  width: 100%;
+  height: 100%;
+  padding: 12px 4px;
+  font-size: 18px;
+  color: #201E45;
+  transition: color .25s;
+}
+
+.save-container>button:hover {
+  cursor: pointer;
+  color: #E4E4EF;
+}
+
+.checklist-container {
+  display: flex;
+  justify-content: center;
+}
+
+.checklist-container h3 {
+  display: inline;
+}

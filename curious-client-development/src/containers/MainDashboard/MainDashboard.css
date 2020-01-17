@@ -1,0 +1,135 @@
+h1 span {
+  font-weight: 900;
+  color: #F07B7B;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 150px;
+  width: 100%;
+}
+
+#delete-button {
+  align-self: flex-end;
+}
+
+#roadmap-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40%;
+  align-self: center;
+  flex-grow: 1;
+}
+
+#delete-x {
+  display: none;
+  cursor: pointer;
+}
+
+.discover-more-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 32px;
+  padding-top: 150px;
+}
+
+.add-roadmap-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 200px;
+  padding-right: 32px;
+}
+
+.roadmap-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: 3px solid #201E45;
+  box-shadow: -2px 4px 5px rgba(0, 0, 0, .2);
+  height: 350px;
+  width: 350px;
+  font-size: 25px;
+  color: #201E45;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.roadmap-container:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #F07B7B;
+  border: 3px solid #F07B7B;
+}
+
+.roadmap-container:hover #delete-x {
+  display: block;
+}
+
+/* CSS rules for dashboard without roadmaps */
+
+.background {
+  height: 100vh;
+  background-image: url('./../../assets/background-discover-2.jpg');
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.arrow-icon {
+  font-size: 30px;
+  margin-left: 16px;
+  transition: transform 0.5s;
+  color: #F07B7B;
+}
+
+.arrow-icon:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+#add-roadmap-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 32px;
+  padding-right: 224px;
+}
+
+#add-roadmap-button{
+    text-decoration: none;
+    background-color: #F07b7b;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    outline: none;
+    transition: transform 1s;
+}
+
+#add-roadmap-button:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#add-roadmap-button:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(255, 246, 246, 0.15);
+    border-bottom: none;
+
+}

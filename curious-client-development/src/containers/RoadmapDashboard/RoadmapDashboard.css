@@ -1,0 +1,28 @@
+.background-tree {
+  background-image: url('./../../assets/roadmaptree.png');
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.roadmap-tree-container {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: 65%;
+  align-items: center;
+}
+
+.roadmap-tree-container h2 {
+  padding-bottom: 20px;
+}
+
+.roadmap-detail-container {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap-detail-container.no-prev {
+  height: 100%;
+}

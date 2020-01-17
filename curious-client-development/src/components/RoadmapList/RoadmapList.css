@@ -1,0 +1,76 @@
+.discover-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 50px 0 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.category-icon {
+  align-self: center;
+  font-size: 40px;
+}
+
+#discover-title {
+  padding-top: 2em;
+  font-weight: 600;
+}
+
+#discover-user {
+  padding-top: 15px;
+  font-weight: 100;
+  color: #F07B7B;
+  font-size: 20px;
+}
+
+#load-more-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#load-more-button button {
+    color: #fff;
+    border: 1px solid #201E45;
+    border-radius: 5px;
+    background-color: #201E45;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    height: 70px;
+    width: 140px;
+    margin-right: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#load-more-button button:hover {
+  background-color: #F07B7B;
+  border: 1px solid #F07B7B;
+}
+
+/* FADE IN ANYMATION */
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:10; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:10; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity: 10; } }
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 0.3;
+  -moz-animation:fadeIn ease-in 0.3;
+  animation:fadeIn ease-in 0.3;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.3s;
+  -moz-animation-duration:0.3s;
+  animation-duration:0.3s;
+}

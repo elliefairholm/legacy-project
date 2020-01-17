@@ -1,0 +1,77 @@
+/* hover effect for navigation */
+.right-container a {
+  position: relative;
+}
+.right-container a:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #F07B7B;
+  width: 0;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  -webkit-transition: .55s ease;
+  transition: .5s ease;
+  z-index: 10;
+}
+
+.right-container a:hover::after {
+  width: 100%;
+}
+
+.right-container :not(:last-of-type)>a {
+  margin-right: 36px;
+}
+
+/* main navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 0;
+    background-color: #E4E4EF;
+    height: 80px;
+    align-items: center;
+  }
+
+.right-container {
+  display: flex;
+  margin-right: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 65%;
+}
+
+.left-container {
+  width: 35%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-container li {
+  margin: 0;
+}
+
+.logo {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+
+.logo:hover,
+.nav-links:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  #welcome {
+    display: none;
+  }
+}
+
+

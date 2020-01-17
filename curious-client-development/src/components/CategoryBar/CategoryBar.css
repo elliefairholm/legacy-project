@@ -1,0 +1,35 @@
+#linkbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+#linkbar-container button {
+  color: #fff;
+  border: 1px solid #201E45;
+  border-radius: 5px;
+  background-color: #201E45;
+  font-weight: 400;
+  text-decoration: none;
+  height: 70px;
+  width: 140px;
+  margin-right: 5px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#linkbar-container button:hover {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#linkbar-category {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 300;
+}

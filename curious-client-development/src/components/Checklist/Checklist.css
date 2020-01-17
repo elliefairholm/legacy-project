@@ -1,0 +1,26 @@
+.checklist-wrapper {
+  width: 80%;
+}
+
+.checklist-wrapper input {
+  display: inline-block;
+  background: rgba(240, 240, 240, 0.719);
+  border: 1px solid #4042616c;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 16px 16px 16px 0px;
+}
+
+.big-input {
+  width: 80%;
+}
+
+.big-input button {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.add-checklist-item {
+  display: flex;
+  align-items: center;
+}
