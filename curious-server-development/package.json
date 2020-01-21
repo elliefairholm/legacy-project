@@ -4,7 +4,7 @@
   "description": "server for curious app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ENVIRONMENT=test jest"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
     "gulp-load-plugins": "^2.0.1",
-    "husky": "^3.0.3"
+    "husky": "^3.0.3",
+    "jest": "^24.9.0"
   },
   "husky": {
     "hooks": {
@@ -32,11 +33,15 @@
     }
   },
   "dependencies": {
+    "apollo-fetch": "^0.7.0",
     "apollo-server": "^2.8.1",
+    "axios": "^0.19.1",
     "bcrypt": "^3.0.6",
     "dotenv": "^8.0.0",
+    "eslint-plugin-jest": "^23.6.0",
     "graphql": "^14.4.2",
     "jsonwebtoken": "^8.5.1",
+    "path": "^0.12.7",
     "pg": "^7.12.1",
     "sequelize": "^5.13.0"
   },

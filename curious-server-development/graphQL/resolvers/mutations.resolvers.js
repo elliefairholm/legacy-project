@@ -35,7 +35,12 @@ exports.login = async (obj, { email, password }) => {
 };
 
 exports.createRoadmap = async (obj, { UserId, title, category }) => {
+  console.log('UserId: ', UserId);
+  console.log('title: ', title);
+  console.log('category: ', category);
   const roadmap = await db.Roadmaps.create({ title, category, UserId });
+  console.log(roadmap);
+  console.log(roadmap.dataValues);
   return { ...roadmap.dataValues, topics: [] };
 };
 

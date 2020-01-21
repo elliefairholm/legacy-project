@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create a topic where row IS full 1`] = `[Error: Roadmap does not exist]`;
+
+exports[`destroy a roadmap that does not exist 1`] = `[Error: Roadmap does not exist]`;
+
+exports[`destroy a topic that does not exist 1`] = `[Error: Topic does not exist]`;
+
+exports[`destroy a topic that does not exist 2`] = `[Error: Checklist item does not exist]`;
+
+exports[`unsuccessfuly create a checklist item 1`] = `[Error: Could not create ChecklistItem]`;

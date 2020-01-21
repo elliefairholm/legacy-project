@@ -1,9 +1,14 @@
-require('dotenv').config();
+const path = require('path');
+
+require('dotenv').config({
+  path: path.resolve(__dirname, `./${process.env.ENVIRONMENT}.env`),
+});
 
 const app = require('./app');
 const db = require('./models');
 
 const { PORT } = process.env;
+
 
 db.sequelize.sync().then(() => {
   app.listen({ port: PORT }, () => {

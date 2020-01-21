@@ -17,7 +17,9 @@ const app = new ApolloServer({
   resolvers,
   // Create token for validation
   context: ({ req }) => {
+    console.log(req.headers);
     const token = req.headers.authorization || '';
+    console.log(token);
     const user = getUser(token);
     return { user };
   },
